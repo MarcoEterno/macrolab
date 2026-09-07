@@ -36,13 +36,7 @@ The envelope uses **36 parameter variants**, each compared with its own baseline
 
 `tests/fixtures/model-v2.json` locks selected model magnitudes. It is software regression evidence, not historical validation. Update it only after deliberately reviewing a model or source change.
 
-`node_modules/.bin/tsc --noEmit --incremental false` checks types. A focused application check is:
-
-```
-node_modules/.bin/oxlint app lib components/simulator.tsx components/economy-chart.tsx components/methodology.tsx tests scripts vite.config.ts
-```
-
-The repository-wide `npm run lint` also visits unused starter components with existing warnings. Those components were preserved; the current app's files pass the focused check. Dependencies were updated and the current audit reported zero known vulnerabilities.
+`node_modules/.bin/tsc --noEmit --incremental false` checks types. `npm run lint` checks the entire retained application. Unused starter components and their dedicated dependencies have been removed; the existing eight UI primitives remain. Dependencies were updated and the current audit reported zero known vulnerabilities.
 
 Browser interaction and screenshot verification were blocked by the browser's unavailable admin-policy check. Responsive layout, accessibility and interface changes have code-level checks, not a completed visual or screen-reader audit. See `REVIEW-RESOLUTION.md` for all review outcomes and remaining limits.
 

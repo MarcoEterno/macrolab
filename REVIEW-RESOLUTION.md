@@ -40,6 +40,7 @@
 | No explanation of the demand channels | **Fixed.** A collapsible per-quarter breakdown shows fiscal, adjustment, wage, trade, monetary, energy, migration and stabilization contributions. It explicitly describes the desired output gap, rather than falsely claiming an additive decomposition of realized GDP. |
 | Accessibility of chart interaction | **Improved.** Keyboard controls, selected-period semantics and the existing native time slider. A manual assistive-technology audit remains unverified. |
 | Dead dark-theme variables | **Fixed.** Removed the unused custom dark palette; the existing light design remains. |
+| Unused UI catalogue and dependencies | **Fixed.** Traced the application import graph and removed 52 unreferenced template components, their unused mobile hook and eight dedicated packages. Retained the eight UI primitives used by the application. |
 
 ## Engineering and validation
 
@@ -47,7 +48,7 @@ The model and interface are formatted and separated into configuration, scenario
 
 Added regression coverage for price-level magnitude, equilibrium consistency, migration, FX, monetary-union behavior, transfer reconciliation, public assets, sensitivity channels, extreme configurations, saved/imported/shared scenarios, language defaults and translation placeholders. A fixed fixture covers eight scenarios at four horizons. These are regression tests, not empirical validation.
 
-Dependencies were updated, including the React server-component and deployment stack. The dependency audit reported **zero known vulnerabilities** at the time of this repair. The app passes focused code checks and type checking. The broad repository check still reports existing issues in unused starter components; no rule was globally disabled to hide them.
+Dependencies were updated, including the React server-component and deployment stack. The dependency audit reported **zero known vulnerabilities** at the time of this repair. The complete retained repository passes its code checks and type checking. Removed unused starter files account for the previous catalogue warnings; no rule was globally disabled to hide them.
 
 ## What remains, and why
 
@@ -57,6 +58,5 @@ Dependencies were updated, including the React server-component and deployment s
 4. **Empirical wage distributions and reliable minimum-wage estimates.** The 100 income bins are synthetic. Country wage surveys, hours, employment participation, enforcement and actual policy coverage would be required for credible distributional forecasts. Broader assumptions and honest ranges improve exploration without inventing those data.
 5. **Probabilistic uncertainty and complete long-run neutrality.** The parameter envelope is deterministic. The fiscal half-life is an explicit approximation. Estimating joint parameter uncertainty and an expectations/equilibrium system is required before calling the bands confidence intervals or the 20-year results reliable forecasts.
 6. **Manual browser, mobile and screen-reader verification.** The browser denied access because its admin-enforced security policy could not be verified. No alternate route was used to bypass that check. Interface fixes were implemented, but visual and interaction quality cannot be claimed as verified until this access issue is resolved.
-7. **Pruning the unused UI starter catalogue and its lint warnings.** These components are not used by the simulator and were preserved under the Sites workflow's instruction against unrelated starter cleanup. They are tree-shaken, and the current dependency audit is clean. The active application files pass their focused check; catalogue cleanup remains separate maintenance.
 
 Two proposed tests were deliberately not copied literally: forcing every observed country to remain within one percentage point of its initial rate/inflation/unemployment would conceal genuine transitional dynamics; forcing every total policy price effect to match the direct pass-through coefficient would suppress valid demand and monetary feedback. A controlled steady-state test and an isolated direct-cost price test address the actual defects instead.
