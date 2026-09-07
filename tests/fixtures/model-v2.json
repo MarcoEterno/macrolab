@@ -1,0 +1,459 @@
+{
+  "modelVersion": "2.0",
+  "purpose": "Reviewed software regression fixture. These are model outputs, not historical observations or forecast validation.",
+  "tolerance": 1e-7,
+  "records": [
+    {
+      "countryId": "US",
+      "name": "US wage floor 60",
+      "policyChanges": {
+        "minimumWage": 60
+      },
+      "points": [
+        {
+          "quarter": 1,
+          "gdp": 100.25782912,
+          "inflation": 3.03076282,
+          "price": 100.74922842,
+          "gdpDeflator": 100.74922842,
+          "fx": 99.73506131,
+          "unemployment": 4.25181259,
+          "wages": 100.14289729,
+          "debt": 121.36340206,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 4,
+          "gdp": 101.05079548,
+          "inflation": 3.10096429,
+          "price": 103.02641524,
+          "gdpDeflator": 103.08896179,
+          "fx": 99.20015977,
+          "unemployment": 4.72512459,
+          "wages": 100.60462275,
+          "debt": 122.4829859,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 20,
+          "gdp": 109.47283159,
+          "inflation": 2.25233745,
+          "price": 112.8856977,
+          "gdpDeflator": 112.94821492,
+          "fx": 99.4309364,
+          "unemployment": 5.04071237,
+          "wages": 106.99344032,
+          "debt": 128.55748358,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 40,
+          "gdp": 120.79322554,
+          "inflation": 2.19500246,
+          "price": 125.98823939,
+          "gdpDeflator": 126.00505083,
+          "fx": 99.86927607,
+          "unemployment": 5.05920878,
+          "wages": 115.12511207,
+          "debt": 136.62246082,
+          "publicAssets": 0
+        }
+      ]
+    },
+    {
+      "countryId": "US",
+      "name": "US tariff 10",
+      "policyChanges": {
+        "tariff": 10
+      },
+      "points": [
+        {
+          "quarter": 1,
+          "gdp": 100.27608128,
+          "inflation": 3.74739221,
+          "price": 100.92396337,
+          "gdpDeflator": 100.69462232,
+          "fx": 99.73528041,
+          "unemployment": 4.2308308,
+          "wages": 99.57275214,
+          "debt": 121.32937639,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 4,
+          "gdp": 101.24770228,
+          "inflation": 3.35823973,
+          "price": 103.52516922,
+          "gdpDeflator": 102.64930833,
+          "fx": 99.209281,
+          "unemployment": 4.3854983,
+          "wages": 98.56764185,
+          "debt": 122.01985115,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 20,
+          "gdp": 109.44725364,
+          "inflation": 1.84405402,
+          "price": 111.99078902,
+          "gdpDeflator": 110.97596377,
+          "fx": 100.07213519,
+          "unemployment": 4.49571624,
+          "wages": 104.47662387,
+          "debt": 124.78452261,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 40,
+          "gdp": 120.95311673,
+          "inflation": 1.87718944,
+          "price": 122.82880463,
+          "gdpDeflator": 121.67165405,
+          "fx": 100.40029475,
+          "unemployment": 4.45540575,
+          "wages": 112.5349599,
+          "debt": 125.79897041,
+          "publicAssets": 0
+        }
+      ]
+    },
+    {
+      "countryId": "US",
+      "name": "US energy 40",
+      "policyChanges": {
+        "energyShock": 40
+      },
+      "points": [
+        {
+          "quarter": 1,
+          "gdp": 100.23370284,
+          "inflation": 6.14536845,
+          "price": 101.50215485,
+          "gdpDeflator": 100.69337703,
+          "fx": 99.73555092,
+          "unemployment": 4.236764,
+          "wages": 99.3763675,
+          "debt": 121.47227761,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 4,
+          "gdp": 101.27866858,
+          "inflation": 2.05016592,
+          "price": 103.06954714,
+          "gdpDeflator": 102.6419418,
+          "fx": 99.21733092,
+          "unemployment": 4.38653749,
+          "wages": 100.58195193,
+          "debt": 122.83630911,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 20,
+          "gdp": 109.68117304,
+          "inflation": 1.96316691,
+          "price": 111.38796013,
+          "gdpDeflator": 111.36365591,
+          "fx": 99.97147373,
+          "unemployment": 4.41872411,
+          "wages": 107.20539808,
+          "debt": 129.99495305,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 40,
+          "gdp": 121.14002547,
+          "inflation": 2.01498382,
+          "price": 123.00050059,
+          "gdpDeflator": 122.96309732,
+          "fx": 100.33105617,
+          "unemployment": 4.3940955,
+          "wages": 115.45711129,
+          "debt": 137.26435106,
+          "publicAssets": 0
+        }
+      ]
+    },
+    {
+      "countryId": "US",
+      "name": "US migration 1",
+      "policyChanges": {
+        "immigration": 1
+      },
+      "points": [
+        {
+          "quarter": 1,
+          "gdp": 100.33460494,
+          "inflation": 2.8094885,
+          "price": 100.69509121,
+          "gdpDeflator": 100.69509121,
+          "fx": 99.73517855,
+          "unemployment": 4.22859675,
+          "wages": 100.19070484,
+          "debt": 121.33969936,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 4,
+          "gdp": 101.77663024,
+          "inflation": 2.44503743,
+          "price": 102.59864508,
+          "gdpDeflator": 102.66074715,
+          "fx": 99.20553515,
+          "unemployment": 4.36268073,
+          "wages": 100.83103592,
+          "debt": 122.12193128,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 20,
+          "gdp": 112.8242797,
+          "inflation": 1.88040049,
+          "price": 111.18747222,
+          "gdpDeflator": 111.19638863,
+          "fx": 99.97920015,
+          "unemployment": 4.48271321,
+          "wages": 105.06360518,
+          "debt": 124.50570103,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 40,
+          "gdp": 128.45601884,
+          "inflation": 1.91042424,
+          "price": 122.13470333,
+          "gdpDeflator": 122.10572644,
+          "fx": 100.25240123,
+          "unemployment": 4.43758025,
+          "wages": 111.06100792,
+          "debt": 121.27550428,
+          "publicAssets": 0
+        }
+      ]
+    },
+    {
+      "countryId": "US",
+      "name": "US purchases 3",
+      "policyChanges": {
+        "spending": 3
+      },
+      "points": [
+        {
+          "quarter": 1,
+          "gdp": 100.47791184,
+          "inflation": 2.83179416,
+          "price": 100.70055249,
+          "gdpDeflator": 100.70055249,
+          "fx": 99.73399207,
+          "unemployment": 4.20257348,
+          "wages": 100.35731243,
+          "debt": 121.3343117,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 4,
+          "gdp": 102.73483229,
+          "inflation": 2.75037893,
+          "price": 102.74352763,
+          "gdpDeflator": 102.80778408,
+          "fx": 99.15312582,
+          "unemployment": 4.05743344,
+          "wages": 102.0813302,
+          "debt": 122.45842758,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 20,
+          "gdp": 110.48155166,
+          "inflation": 2.75190592,
+          "price": 115.32923078,
+          "gdpDeflator": 115.51548119,
+          "fx": 98.28531095,
+          "unemployment": 4.14408701,
+          "wages": 107.88987585,
+          "debt": 137.54078342,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 40,
+          "gdp": 121.2000105,
+          "inflation": 2.17945788,
+          "price": 129.83338693,
+          "gdpDeflator": 129.82529861,
+          "fx": 100.15652893,
+          "unemployment": 4.36443369,
+          "wages": 115.5139829,
+          "debt": 164.38550899,
+          "publicAssets": 0
+        }
+      ]
+    },
+    {
+      "countryId": "JP",
+      "name": "Japan baseline",
+      "policyChanges": {},
+      "points": [
+        {
+          "quarter": 1,
+          "gdp": 100.53648282,
+          "inflation": 3.036248,
+          "price": 100.75056932,
+          "gdpDeflator": 100.75056932,
+          "fx": 100.61058999,
+          "unemployment": 2.453044,
+          "wages": 100.5625224,
+          "debt": 238.30249329,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 4,
+          "gdp": 101.46622624,
+          "inflation": 2.78813858,
+          "price": 103.02845171,
+          "gdpDeflator": 102.8805827,
+          "fx": 100.90406095,
+          "unemployment": 2.3181339,
+          "wages": 101.58134865,
+          "debt": 235.21444464,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 20,
+          "gdp": 104.24767328,
+          "inflation": 1.99283199,
+          "price": 112.42320409,
+          "gdpDeflator": 112.48059622,
+          "fx": 99.6912447,
+          "unemployment": 2.44012647,
+          "wages": 106.87160037,
+          "debt": 232.58091939,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 40,
+          "gdp": 108.60424887,
+          "inflation": 1.97431352,
+          "price": 123.93034967,
+          "gdpDeflator": 123.91669105,
+          "fx": 100.07355362,
+          "unemployment": 2.38820324,
+          "wages": 114.03265221,
+          "debt": 232.20778297,
+          "publicAssets": 0
+        }
+      ]
+    },
+    {
+      "countryId": "BR",
+      "name": "Brazil baseline",
+      "policyChanges": {},
+      "points": [
+        {
+          "quarter": 1,
+          "gdp": 100.40733081,
+          "inflation": 4.7485,
+          "price": 101.1665531,
+          "gdpDeflator": 101.1665531,
+          "fx": 99.6805912,
+          "unemployment": 6.02275,
+          "wages": 100.2845286,
+          "debt": 87.79870888,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 4,
+          "gdp": 101.65460953,
+          "inflation": 3.95984722,
+          "price": 104.30787779,
+          "gdpDeflator": 104.41041536,
+          "fx": 98.81478527,
+          "unemployment": 6.15101737,
+          "wages": 101.28742341,
+          "debt": 90.75503779,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 20,
+          "gdp": 111.04359772,
+          "inflation": 2.95471967,
+          "price": 118.33537364,
+          "gdpDeflator": 118.35226572,
+          "fx": 99.99929746,
+          "unemployment": 6.23609594,
+          "wages": 107.62668018,
+          "debt": 112.34286413,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 40,
+          "gdp": 124.41198352,
+          "inflation": 2.96314021,
+          "price": 136.93935132,
+          "gdpDeflator": 136.76293148,
+          "fx": 101.28765444,
+          "unemployment": 6.1874807,
+          "wages": 116.25356324,
+          "debt": 143.99942225,
+          "publicAssets": 0
+        }
+      ]
+    },
+    {
+      "countryId": "IT",
+      "name": "Italy purchases 3",
+      "policyChanges": {
+        "spending": 3
+      },
+      "points": [
+        {
+          "quarter": 1,
+          "gdp": 100.37233205,
+          "inflation": 1.53060666,
+          "price": 100.38047474,
+          "gdpDeflator": 100.38047474,
+          "fx": 99.84012793,
+          "unemployment": 6.37595889,
+          "wages": 100.37576161,
+          "debt": 135.02859985,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 4,
+          "gdp": 101.98013666,
+          "inflation": 1.77159238,
+          "price": 101.59349646,
+          "gdpDeflator": 101.65437326,
+          "fx": 99.67285628,
+          "unemployment": 6.12583631,
+          "wages": 101.79071748,
+          "debt": 135.16811246,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 20,
+          "gdp": 106.08055167,
+          "inflation": 2.95521645,
+          "price": 112.81716314,
+          "gdpDeflator": 112.82921146,
+          "fx": 99.95389377,
+          "unemployment": 5.72964563,
+          "wages": 106.60079655,
+          "debt": 136.90180099,
+          "publicAssets": 0
+        },
+        {
+          "quarter": 40,
+          "gdp": 109.91568118,
+          "inflation": 2.50652607,
+          "price": 129.21485838,
+          "gdpDeflator": 129.21518493,
+          "fx": 99.99893662,
+          "unemployment": 6.01675884,
+          "wages": 112.46039669,
+          "debt": 140.62295576,
+          "publicAssets": 0
+        }
+      ]
+    }
+  ]
+}

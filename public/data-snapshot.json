@@ -1,0 +1,343 @@
+{
+  "retrievedAt": "2026-09-07T18:57:18.511Z",
+  "provider": "World Bank, World Development Indicators",
+  "method": "Public country cards. Values preserve displayed precision; observations have individual reference years. Snapshot fixes what was read; upstream revisions are not applied automatically.",
+  "countries": {
+    "US": {
+      "url": "https://data.worldbank.org/country/US",
+      "htmlSha256": "06274bf43aa5350e84fd9df8073255158c196fc89bdf4032cb2e480f7fe03810",
+      "observations": {
+        "gdp": {
+          "indicator": "NY.GDP.MKTP.CD",
+          "value": 30770,
+          "unit": "USD billion",
+          "year": 2025,
+          "displayedValue": "30.77",
+          "displayedPeriod": "(2025 trillion)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=US"
+        },
+        "population": {
+          "indicator": "SP.POP.TOTL",
+          "value": 341.784857,
+          "unit": "million people",
+          "year": 2025,
+          "displayedValue": "341,784,857",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=US"
+        },
+        "inflation": {
+          "indicator": "FP.CPI.TOTL.ZG",
+          "value": 2.9,
+          "unit": "annual %",
+          "year": 2024,
+          "displayedValue": "2.9",
+          "displayedPeriod": "(2024)",
+          "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=US"
+        },
+        "unemployment": {
+          "indicator": "SL.UEM.TOTL.ZS",
+          "value": 4.2,
+          "unit": "% labor force",
+          "year": 2025,
+          "displayedValue": "4.2",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=US"
+        }
+      }
+    },
+    "DE": {
+      "url": "https://data.worldbank.org/country/DE",
+      "htmlSha256": "0a6fde6ecc4a830a686f681774319a1c479a6bdfe31889818613c20a48a8d5fe",
+      "observations": {
+        "gdp": {
+          "indicator": "NY.GDP.MKTP.CD",
+          "value": 5050,
+          "unit": "USD billion",
+          "year": 2025,
+          "displayedValue": "5.05",
+          "displayedPeriod": "(2025 trillion)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=DE"
+        },
+        "population": {
+          "indicator": "SP.POP.TOTL",
+          "value": 83.491249,
+          "unit": "million people",
+          "year": 2025,
+          "displayedValue": "83,491,249",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=DE"
+        },
+        "inflation": {
+          "indicator": "FP.CPI.TOTL.ZG",
+          "value": 2.2,
+          "unit": "annual %",
+          "year": 2025,
+          "displayedValue": "2.2",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=DE"
+        },
+        "unemployment": {
+          "indicator": "SL.UEM.TOTL.ZS",
+          "value": 3.7,
+          "unit": "% labor force",
+          "year": 2025,
+          "displayedValue": "3.7",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=DE"
+        }
+      }
+    },
+    "SE": {
+      "url": "https://data.worldbank.org/country/SE",
+      "htmlSha256": "a045e01b8c62615ac0d0fdbadde55d453a24602a0ff04b5ef9bd4c97b815362e",
+      "observations": {
+        "gdp": {
+          "indicator": "NY.GDP.MKTP.CD",
+          "value": 669,
+          "unit": "USD billion",
+          "year": 2025,
+          "displayedValue": "669",
+          "displayedPeriod": "(2025 billion)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=SE"
+        },
+        "population": {
+          "indicator": "SP.POP.TOTL",
+          "value": 10.59662,
+          "unit": "million people",
+          "year": 2025,
+          "displayedValue": "10,596,620",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=SE"
+        },
+        "inflation": {
+          "indicator": "FP.CPI.TOTL.ZG",
+          "value": 0.7,
+          "unit": "annual %",
+          "year": 2025,
+          "displayedValue": "0.7",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=SE"
+        },
+        "unemployment": {
+          "indicator": "SL.UEM.TOTL.ZS",
+          "value": 8.7,
+          "unit": "% labor force",
+          "year": 2025,
+          "displayedValue": "8.7",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=SE"
+        }
+      }
+    },
+    "JP": {
+      "url": "https://data.worldbank.org/country/JP",
+      "htmlSha256": "a0f2392f244dc84a67e800b186433dc495606c5eaee17535950444518f270164",
+      "observations": {
+        "gdp": {
+          "indicator": "NY.GDP.MKTP.CD",
+          "value": 4440,
+          "unit": "USD billion",
+          "year": 2025,
+          "displayedValue": "4.44",
+          "displayedPeriod": "(2025 trillion)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=JP"
+        },
+        "population": {
+          "indicator": "SP.POP.TOTL",
+          "value": 123.366734,
+          "unit": "million people",
+          "year": 2025,
+          "displayedValue": "123,366,734",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=JP"
+        },
+        "inflation": {
+          "indicator": "FP.CPI.TOTL.ZG",
+          "value": 3.2,
+          "unit": "annual %",
+          "year": 2025,
+          "displayedValue": "3.2",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=JP"
+        },
+        "unemployment": {
+          "indicator": "SL.UEM.TOTL.ZS",
+          "value": 2.5,
+          "unit": "% labor force",
+          "year": 2025,
+          "displayedValue": "2.5",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=JP"
+        }
+      }
+    },
+    "BR": {
+      "url": "https://data.worldbank.org/country/BR",
+      "htmlSha256": "1eb6f32b70622fc42644fa419e9c12eda8a4a4345670759fbce33d01c23701cb",
+      "observations": {
+        "gdp": {
+          "indicator": "NY.GDP.MKTP.CD",
+          "value": 2280,
+          "unit": "USD billion",
+          "year": 2025,
+          "displayedValue": "2.28",
+          "displayedPeriod": "(2025 trillion)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=BR"
+        },
+        "population": {
+          "indicator": "SP.POP.TOTL",
+          "value": 212.812405,
+          "unit": "million people",
+          "year": 2025,
+          "displayedValue": "212,812,405",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=BR"
+        },
+        "inflation": {
+          "indicator": "FP.CPI.TOTL.ZG",
+          "value": 5,
+          "unit": "annual %",
+          "year": 2025,
+          "displayedValue": "5.0",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=BR"
+        },
+        "unemployment": {
+          "indicator": "SL.UEM.TOTL.ZS",
+          "value": 6,
+          "unit": "% labor force",
+          "year": 2025,
+          "displayedValue": "6.0",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=BR"
+        }
+      }
+    },
+    "IN": {
+      "url": "https://data.worldbank.org/country/IN",
+      "htmlSha256": "62468de9327523e2fe051c078f02e6f4ed9f1503ab86ba8a922ca3235d50a4f3",
+      "observations": {
+        "gdp": {
+          "indicator": "NY.GDP.MKTP.CD",
+          "value": 3960,
+          "unit": "USD billion",
+          "year": 2025,
+          "displayedValue": "3.96",
+          "displayedPeriod": "(2025 trillion)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN"
+        },
+        "population": {
+          "indicator": "SP.POP.TOTL",
+          "value": 1460.0,
+          "unit": "million people",
+          "year": 2025,
+          "displayedValue": "1.46",
+          "displayedPeriod": "(2025 billion)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=IN"
+        },
+        "inflation": {
+          "indicator": "FP.CPI.TOTL.ZG",
+          "value": 2.4,
+          "unit": "annual %",
+          "year": 2025,
+          "displayedValue": "2.4",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IN"
+        },
+        "unemployment": {
+          "indicator": "SL.UEM.TOTL.ZS",
+          "value": 4.2,
+          "unit": "% labor force",
+          "year": 2025,
+          "displayedValue": "4.2",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=IN"
+        }
+      }
+    },
+    "IT": {
+      "url": "https://data.worldbank.org/country/IT",
+      "htmlSha256": "648ba8684cc20a2690f71b7151843b16e9f5506e6728dcf57be02d4e68875677",
+      "observations": {
+        "gdp": {
+          "indicator": "NY.GDP.MKTP.CD",
+          "value": 2550,
+          "unit": "USD billion",
+          "year": 2025,
+          "displayedValue": "2.55",
+          "displayedPeriod": "(2025 trillion)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IT"
+        },
+        "population": {
+          "indicator": "SP.POP.TOTL",
+          "value": 58.915656,
+          "unit": "million people",
+          "year": 2025,
+          "displayedValue": "58,915,656",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=IT"
+        },
+        "inflation": {
+          "indicator": "FP.CPI.TOTL.ZG",
+          "value": 1.5,
+          "unit": "annual %",
+          "year": 2025,
+          "displayedValue": "1.5",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IT"
+        },
+        "unemployment": {
+          "indicator": "SL.UEM.TOTL.ZS",
+          "value": 6.4,
+          "unit": "% labor force",
+          "year": 2025,
+          "displayedValue": "6.4",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=IT"
+        }
+      }
+    },
+    "ZA": {
+      "url": "https://data.worldbank.org/country/ZA",
+      "htmlSha256": "c7aab57405a067bb5679c74d7ce65a12bc725d9e9fbc0b368883801914c3a664",
+      "observations": {
+        "gdp": {
+          "indicator": "NY.GDP.MKTP.CD",
+          "value": 427.18,
+          "unit": "USD billion",
+          "year": 2025,
+          "displayedValue": "427.18",
+          "displayedPeriod": "(2025 billion)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=ZA"
+        },
+        "population": {
+          "indicator": "SP.POP.TOTL",
+          "value": 64.747319,
+          "unit": "million people",
+          "year": 2025,
+          "displayedValue": "64,747,319",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=ZA"
+        },
+        "inflation": {
+          "indicator": "FP.CPI.TOTL.ZG",
+          "value": 3.2,
+          "unit": "annual %",
+          "year": 2025,
+          "displayedValue": "3.2",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=ZA"
+        },
+        "unemployment": {
+          "indicator": "SL.UEM.TOTL.ZS",
+          "value": 32.4,
+          "unit": "% labor force",
+          "year": 2025,
+          "displayedValue": "32.4",
+          "displayedPeriod": "(2025)",
+          "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=ZA"
+        }
+      }
+    }
+  }
+}

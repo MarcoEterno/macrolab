@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { cookies } from 'next/headers';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -12,18 +13,30 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  title: 'MacroLab — Economy Simulator',
-  description: 'Explore how economic policies affect output, jobs, prices, inequality, and public finances in a transparent country simulator.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const language = (await cookies()).get('macrolab-language')?.value;
+  return language === 'it'
+    ? {
+        title: 'MacroLab — Simulatore economico',
+        description:
+          'Esplora gli effetti delle politiche su produzione, occupazione, prezzi, disuguaglianza e finanze pubbliche con un modello trasparente.',
+      }
+    : {
+        title: 'MacroLab — Economy Simulator',
+        description:
+          'Explore how economic policies affect output, jobs, prices, inequality, and public finances in a transparent country simulator.',
+      };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const language =
+    (await cookies()).get('macrolab-language')?.value === 'it' ? 'it' : 'en';
   return (
-    <html lang="en">
+    <html lang={language}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
