@@ -36,7 +36,14 @@ export default async function RootLayout({
   const language =
     (await cookies()).get('macrolab-language')?.value === 'it' ? 'it' : 'en';
   return (
-    <html lang={language}>
+    <html
+      lang={language}
+      className={
+        (await cookies()).get('macrolab-theme')?.value === 'dark'
+          ? 'dark'
+          : undefined
+      }
+    >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

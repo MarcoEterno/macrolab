@@ -1,4 +1,7 @@
 export const italianV2: Record<string, string> = {
+  'Dark mode': 'Tema scuro',
+  'Switch to light mode': 'Passa al tema chiaro',
+  'Switch to dark mode': 'Passa al tema scuro',
   'Real disposable income per labor-force member · synthetic distribution · start = 100':
     'Reddito disponibile reale per componente della forza lavoro · distribuzione sintetica · inizio = 100',
   'Exchange rate': 'Tasso di cambio',

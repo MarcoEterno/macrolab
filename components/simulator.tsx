@@ -43,6 +43,8 @@ import {
   TriangleAlert,
   X,
   Languages,
+  Moon,
+  Sun,
 } from 'lucide-react';
 import { Slider } from '@/components/ui/slider';
 import {
@@ -287,7 +289,8 @@ function Distribution({ point, base }: { point: Point; base: Point }) {
                 style={{
                   left: v < 0 ? `${50 - (Math.abs(v) / max) * 48}%` : '50%',
                   width: `${(Math.abs(v) / max) * 48}%`,
-                  background: v < 0 ? '#bd6e56' : '#008d6b',
+                  background:
+                    v < 0 ? 'var(--chart-negative)' : 'var(--chart-policy)',
                 }}
               />
             </div>
@@ -392,12 +395,15 @@ function Simulator({
   onLanguageChange,
   initial,
   initialNotice = '',
+  initialDark = false,
 }: {
   onLanguageChange: (language: Language) => void;
   initial: ScenarioConfig;
   initialNotice?: string;
+  initialDark?: boolean;
 }) {
   const { t, language, number, signed, period, gdpLabel } = useI18n();
+  const [dark, setDark] = useState(initialDark);
   const [country, setCountry] = useState<Country>(initial.country);
   const [policies, setPolicies] = useState<Policies>(initial.policies);
   const [assumptions, setAssumptions] = useState<Assumptions>(
@@ -801,6 +807,26 @@ function Simulator({
             <small>{t('ECONOMY SIMULATOR')}</small>
           </Link>
           <div className="header-actions">
+            <button
+              type="button"
+              className="quiet theme-toggle"
+              aria-pressed={dark}
+              aria-label={t('Dark mode')}
+              title={t(dark ? 'Switch to light mode' : 'Switch to dark mode')}
+              onClick={() => {
+                const next = !dark;
+                setDark(next);
+                document.documentElement.classList.toggle('dark', next);
+                document.cookie = `macrolab-theme=${next ? 'dark' : 'light'};Path=/;Max-Age=31536000;SameSite=Lax`;
+              }}
+            >
+              {dark ? (
+                <Sun size={17} aria-hidden="true" />
+              ) : (
+                <Moon size={17} aria-hidden="true" />
+              )}
+              <span>{t('Dark mode')}</span>
+            </button>
             <div className="language-control">
               <Languages size={16} />
               <Picker
@@ -1668,8 +1694,10 @@ function Simulator({
 
 export default function Home({
   initialLanguage = 'en',
+  initialDark = false,
 }: {
   initialLanguage?: Language;
+  initialDark?: boolean;
 }) {
   const [language, setLanguage] = useState<Language>(initialLanguage);
   const [initial, setInitial] = useState<ScenarioConfig | null>(null);
@@ -1723,6 +1751,7 @@ export default function Home({
           onLanguageChange={changeLanguage}
           initial={initial}
           initialNotice={initialNotice}
+          initialDark={initialDark}
         />
       ) : (
         <output className="restore-screen">

@@ -4,5 +4,10 @@ export default async function Page() {
   const cookieStore = await cookies();
   const language =
     cookieStore.get('macrolab-language')?.value === 'it' ? 'it' : 'en';
-  return <Simulator initialLanguage={language} />;
+  return (
+    <Simulator
+      initialLanguage={language}
+      initialDark={cookieStore.get('macrolab-theme')?.value === 'dark'}
+    />
+  );
 }

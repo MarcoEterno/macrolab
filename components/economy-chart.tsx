@@ -192,7 +192,7 @@ export function Chart({
           );
         }}
       >
-        <text x={L} y={15} fill="#516773" fontSize="12">
+        <text x={L} y={15} fill="var(--chart-text)" fontSize="12">
           {t(unit)}
         </text>
         {ticks.map((value) => (
@@ -202,32 +202,36 @@ export function Chart({
               x2={W - R}
               y1={y(value)}
               y2={y(value)}
-              stroke={Math.abs(value) < 1e-8 ? '#899ba3' : '#e2e8ec'}
+              stroke={
+                Math.abs(value) < 1e-8
+                  ? 'var(--chart-zero)'
+                  : 'var(--chart-grid)'
+              }
               strokeDasharray="3 4"
             />
             <text
               x={L - 9}
               y={y(value) + 4}
               textAnchor="end"
-              fill="#516773"
+              fill="var(--chart-text)"
               fontSize="12"
             >
               {number(value, step >= 1 ? 0 : step >= 0.1 ? 1 : 2)}
             </text>
           </g>
         ))}
-        {showBand && <path d={area} fill="#008e72" opacity=".14" />}
+        {showBand && <path d={area} fill="var(--chart-policy)" opacity=".14" />}
         <path
           d={path(base)}
           fill="none"
-          stroke="#687787"
+          stroke="var(--chart-baseline)"
           strokeWidth="2"
           strokeDasharray="5 6"
         />
         <path
           d={path(values)}
           fill="none"
-          stroke="#007958"
+          stroke="var(--chart-policy)"
           strokeWidth="3"
           strokeLinejoin="round"
         />
@@ -236,15 +240,15 @@ export function Chart({
           x2={x(q)}
           y1={T}
           y2={H - B}
-          stroke="#608879"
+          stroke="var(--chart-cursor)"
           strokeDasharray="3 4"
         />
         <circle
           cx={x(q)}
           cy={y(values[q])}
           r="5"
-          fill="#007958"
-          stroke="white"
+          fill="var(--chart-policy)"
+          stroke="var(--card)"
           strokeWidth="2"
         />
         {Array.from({ length: intervals + 1 }, (_, i) => {
@@ -257,7 +261,7 @@ export function Chart({
               textAnchor={
                 i === 0 ? 'start' : i === intervals ? 'end' : 'middle'
               }
-              fill="#516773"
+              fill="var(--chart-text)"
               fontSize="12"
             >
               {q === 0
@@ -315,7 +319,8 @@ export function DemandBreakdown({
                       ? `${50 - (Math.abs(value) / scale) * 48}%`
                       : '50%',
                   width: `${(Math.abs(value) / scale) * 48}%`,
-                  background: value < 0 ? '#8a573c' : '#007958',
+                  background:
+                    value < 0 ? 'var(--chart-negative)' : 'var(--chart-policy)',
                 }}
               />
             </div>
